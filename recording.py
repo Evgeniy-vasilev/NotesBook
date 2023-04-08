@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 
 
-# запись в файл
+# Запись в файл
 
 def recording(notes):
     with open("notesBook.csv", "w", newline="") as f:
