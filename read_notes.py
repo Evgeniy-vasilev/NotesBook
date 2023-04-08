@@ -2,7 +2,7 @@ import csv
 from datetime import datetime
 
 
-# чтение заметок
+# Чтение заметок
 
 def read_notes():
     notes = []
