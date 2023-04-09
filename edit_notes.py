@@ -12,7 +12,8 @@ def edit_note():
             note["title"] = input("Введите новый заголовок: ")
             note["text"] = input("Введите новый текст: ")
             note["updated"] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            print("Заметка изменена!")
             break
-    else:
-        print("Заметка не найдена")
+    if note["id"] != note_id:
+        print("Заметка не найдена!")
     rec.recording(notes)

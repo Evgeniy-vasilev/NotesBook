@@ -16,3 +16,4 @@ def add_notes():
     }
     notes.append(new_note)
     rec.recording(notes)
+    print("Заметка создана!")

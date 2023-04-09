@@ -6,10 +6,14 @@ import recording as rec
 def delete_note():
     notes = rn.read_notes()
     note_id = int(input("Введите id заметки: "))
+
     for note in notes:
         if note["id"] == note_id:
             notes.remove(note)
+            print("Заметка удалена!")
             break
-    else:
+
+    if note["id"] != note_id:
         print("Заметка не найдена!")
+
     rec.recording(notes)

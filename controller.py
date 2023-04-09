@@ -20,7 +20,6 @@ def start():
         match num:
             case "1":
                 an.add_notes()
-                print("Заметка создана!")
             case "2":
                 notes = rn.read_notes()
                 for note in notes:
@@ -28,15 +27,10 @@ def start():
                     print(note["text"])
             case "3":
                 dn.delete_note()
-                print("Заметка удалена!")
             case "4":
                 en.edit_note()
-                print("Заметка изменена!")
             case "5":
-                notes = f.filter()
-                for note in notes:
-                    print(f'{note["id"]}. {note["title"]} ({note["created"]}, {note["updated"]})')
-                    print(note["text"])
+                f.filter()
             case "6":
                 print("До встречи!")
                 break
