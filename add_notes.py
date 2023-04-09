@@ -4,7 +4,6 @@ from datetime import datetime
 
 
 # Создание заметок
-
 def add_notes():
     notes = rn.read_notes()
     max_id = max([note["id"] for note in notes]) if notes else 0
