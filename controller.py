@@ -24,7 +24,7 @@ def start():
                 notes = rn.read_notes()
                 for note in notes:
                     print(f'{note["id"]}.{note["title"]}({note["created"]})')
-                    print(note["body"])
+                    print(note["text"])
             case "3":
                 dn.delete_note()
                 print("Заметка удалена")
