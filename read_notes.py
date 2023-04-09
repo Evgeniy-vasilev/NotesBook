@@ -2,7 +2,6 @@ import csv
 
 
 # Чтение заметок
-
 def read_notes():
     notes = []
     with open("notesBook.csv", "r") as f:

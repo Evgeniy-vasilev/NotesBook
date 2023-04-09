@@ -3,7 +3,6 @@ import recording as rec
 
 
 # Удаление заметок по id
-
 def delete_note():
     notes = rn.read_notes()
     note_id = int(input("Введите id заметки: "))

@@ -4,7 +4,6 @@ from datetime import datetime
 
 
 # Редактирование
-
 def edit_note():
     notes = rn.read_notes()
     note_id = int(input("Введите id заметки:"))

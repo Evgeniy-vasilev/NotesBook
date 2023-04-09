@@ -3,6 +3,9 @@ import add_notes as an
 import delete_note as dn
 import edit_notes as en
 import filter as f
+
+
+# Контроллер
 def start():
     while True:
         print("Введите номер действия:")
@@ -31,7 +34,7 @@ def start():
             case "5":
                 notes = f.filter()
                 for note in notes:
-                    print(f'{note["id"]}. {note["title"]} ({note["created"]})')
+                    print(f'{note["id"]}. {note["title"]} ({note["created"]}, {note["updated"]})')
                     print(note["text"])
             case "6":
                 break
