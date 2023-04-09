@@ -11,7 +11,7 @@ def filter():
     for note in notes:
         if datetime.strptime(note["created"], "%Y-%m-%d %H:%M:%S") == date or \
                 note["updated"] and datetime.strptime(note["updated"], "%Y-%m-%d %H:%M:%S") == date:
-                    notes_filter.append(note)
+            notes_filter.append(note)
 
     if len(notes_filter) == 0:
         print("Заметок не найдено!")

@@ -38,4 +38,5 @@ def start():
                     print(f'{note["id"]}. {note["title"]} ({note["created"]}, {note["updated"]})')
                     print(note["text"])
             case "6":
+                print("До встречи!")
                 break
