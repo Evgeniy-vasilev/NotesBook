@@ -6,7 +6,7 @@ from datetime import datetime
 # Редактирование
 def edit_note():
     notes = rn.read_notes()
-    note_id = int(input("Введите id заметки:"))
+    note_id = int(input("Введите id заметки: "))
     for note in notes:
         if note["id"] == note_id:
             note["title"] = input("Введите новый заголовок: ")
