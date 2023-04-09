@@ -11,5 +11,5 @@ def delete_note():
             notes.remove(note)
             break
     else:
-        print("Заметка не найдена")
+        print("Заметка не найдена!")
     rec.recording(notes)
