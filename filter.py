@@ -16,4 +16,8 @@ def filter():
     if len(notes_filter) == 0:
         print("Заметок не найдено!")
 
+    for note in notes_filter:
+        print(f'{note["id"]}. {note["title"]} ({note["created"]}, {note["updated"]})')
+        print(note["text"])
+
     return notes_filter

@@ -9,4 +9,5 @@ def read_notes():
         for row in reader:
             row["id"] = int(row["id"])
             notes.append(row)
+
     return notes
