@@ -23,7 +23,7 @@ def start():
             case "2":
                 notes = rn.read_notes()
                 for note in notes:
-                    print(f'{note["id"]}.{note["title"]}({note["created"]})')
+                    print(f'{note["id"]}.{note["title"]}({note["created"]}, {note["updated"]})')
                     print(note["text"])
             case "3":
                 dn.delete_note()
